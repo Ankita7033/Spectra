@@ -1,0 +1,32 @@
+# SPECTRA — inference-only dependencies (Railway / production)
+# torch + torchvision are installed separately in the Dockerfile
+# with the CPU index-url to keep image size manageable.
+# For local dev or GPU deploy, install them with your CUDA version.
+
+# Core numerics / vision
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+
+# Model / transforms
+timm>=0.9.0
+einops>=0.7.0
+
+# Config / logging
+pyyaml>=6.0
+tqdm>=4.66.0
+
+# Web API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+httpx>=0.25.0
+
+# --- Excluded from production image (use a separate requirements-dev.txt for these): ---
+# matplotlib, seaborn        (plotting / training viz)
+# wandb                      (experiment tracking)
+# pytest                     (tests)
+# gradio                     (separate UI; not needed if FastAPI is the frontend)
+# albumentations             (training augmentations)
+# scikit-learn               (metrics during eval, not at inference)
+# torch-geometric            (only used when use_gnn=True; server forces False)
