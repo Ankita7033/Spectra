@@ -308,10 +308,10 @@ This is a student project. If you find the code useful:
 
 ```bibtex
 @misc{gona2026spectra,
-  author       = {Gona, Lalith},
+  author       = {Ankita},
   title        = {SPECTRA: Causal Physically-Guided Transparent-Object Segmentation},
   year         = {2026},
-  url          = {https://github.com/lalith557/SPECTRA}
+  url          = {https://github.com/Ankita7033/Spectra}
 }
 ```
 
