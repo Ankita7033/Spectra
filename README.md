@@ -307,8 +307,8 @@ Large folders (`venv/`, `data/`, `datasets/`, `results/`, `weights/`, `checkpoin
 This is a student project. If you find the code useful:
 
 ```bibtex
-@misc{gona2026spectra,
-  author       = {Ankita},
+@misc{maji2026spectra,
+  author       = {Maji,Ankita},
   title        = {SPECTRA: Causal Physically-Guided Transparent-Object Segmentation},
   year         = {2026},
   url          = {https://github.com/Ankita7033/Spectra}
